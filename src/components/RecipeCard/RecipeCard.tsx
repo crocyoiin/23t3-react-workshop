@@ -12,6 +12,7 @@ const RecipeCard = ({recipe}: RecipeProps) => {
     return (
         <div id="recipe-card-container">
             <h3 id="recipe-card-title">{recipe.name}</h3>
+            <hr/>
             <p>HP Restored: {recipe.health_restored}</p>
             {ingredientsList}
         </div>

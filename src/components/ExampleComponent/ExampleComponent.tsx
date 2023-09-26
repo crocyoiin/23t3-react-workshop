@@ -48,10 +48,7 @@ const ExampleComponent = () => {
     return (
         <>
             <div id="example-component-container">
-                <h1>Wahoo this is a component</h1>
-                <p>Very slay, very slay</p>
-
-                <h1>Sample prop output</h1>
+                <h1>Link's cookbook!</h1>
                 {recipesList}
             </div>
         </>
