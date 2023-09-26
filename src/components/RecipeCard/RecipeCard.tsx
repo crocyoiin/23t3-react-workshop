@@ -1,5 +1,6 @@
 import { Recipe } from "../../types";
 import './RecipeCard.css'
+import HeartContainer from "../HeartContainer/HeartContainer";
 
 interface RecipeProps {
     recipe: Recipe
@@ -13,7 +14,7 @@ const RecipeCard = ({recipe}: RecipeProps) => {
         <div id="recipe-card-container">
             <h3 id="recipe-card-title">{recipe.name}</h3>
             <hr/>
-            <p>HP Restored: {recipe.health_restored}</p>
+            <HeartContainer numHearts={recipe.health_restored}/>
             {ingredientsList}
         </div>
     )
