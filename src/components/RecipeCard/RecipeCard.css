@@ -1,0 +1,41 @@
+#recipe-card-container {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgba(0, 0, 0, 0.5);
+
+    max-width: 100%;
+    height: 45%;
+    padding: 1.5em;
+    margin: 0.5em;
+
+    text-align: left;
+    border-radius: 5px;
+
+    outline-style: solid;
+    outline-color: rgba(0, 0, 0, 0.5);
+    outline-width: 2px;
+    outline-offset: 2px;
+}
+
+#recipe-card-title {
+    font-style: italic;
+    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
+}
+
+#recipe-card-ingredient {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+hr {
+    width: 100%;
+
+    margin-left: 0;
+    margin-top: 0.2em;
+    
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
