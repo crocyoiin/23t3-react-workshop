@@ -24,6 +24,7 @@ const TodoInput = ({ onAddTodo }: TodoInputProps) => {
         marginLeft: '10px',
       }}
     >
+
       {/* the input bar */}
       <input
         type="text"
@@ -50,6 +51,7 @@ const TodoInput = ({ onAddTodo }: TodoInputProps) => {
       }}>
         +
       </button>
+      
     </div>
   );
 };

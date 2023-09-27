@@ -11,7 +11,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
     setCompleted(!completed);
   };
 
-  // each item is in its own
+  // each item is in its own card
   const cardStyle = {
     border: '1px solid #ccc',
     borderRadius: '10px',

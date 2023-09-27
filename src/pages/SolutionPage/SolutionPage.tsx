@@ -13,6 +13,7 @@ const ExamplePage: React.FC = () => {
 
   return (
     <div>
+      
       <style>
         {`
           html, body {
@@ -23,6 +24,8 @@ const ExamplePage: React.FC = () => {
           }
         `}
       </style>
+
+      {/* title */}
       <h1
         style={{
           color: 'white',
@@ -31,13 +34,17 @@ const ExamplePage: React.FC = () => {
       >
         To-Do List
       </h1>
+
+      {/* the header component */}
       <div className="addtask">
         <TodoInput onAddTodo={handleAddTodo} />
       </div>
-      
+
+      {/* the list component */}
       <div className="listtask">       
         <TodoList todos={todos} />
       </div>
+
     </div>
   );
 };
