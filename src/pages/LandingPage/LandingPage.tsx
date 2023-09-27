@@ -32,7 +32,7 @@ function LandingPage() {
           Exercise (blank)
         </button>
 
-        <button onClick={() => navigate('/exercise')}
+        <button onClick={() => navigate('/solution')}
         onMouseOver={() => handleMouseOver("Stuck but shy? :'0 ")}
         onMouseOut={() => handleMouseOut()}>
           Exercise (solutions)
