@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from '../../assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useNavigate } from 'react-router-dom';
 import './LandingPage.css'
+import { useState } from 'react';
 
 function LandingPage() {
-  const [count, setCount] = useState(0);
+  const navigate = useNavigate();
+  const [desc, setDesc] = useState<string>("awooga");
+
+  const handleMouseOut = () => {
+    setDesc("awooga");
+  }
+
+  const handleMouseOver = (newStr:string) => {
+    setDesc(newStr);
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <h1>Trainee 23T3 react workshop!</h1>
+      <p>Yayy you're in!</p>
+      <div id="card">
+        <button 
+          onClick={() => navigate('/example')}
+          onMouseOver={() => handleMouseOver("Code from the demo!")}
+          onMouseOut={() => handleMouseOut()}>
+          Demo example
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+        <button onClick={() => navigate('/exercise')}
+        onMouseOver={() => handleMouseOver("Blank lab exercise")}
+        onMouseOut={() => handleMouseOut()}>
+          Exercise (blank)
+        </button>
+
+        <button onClick={() => navigate('/exercise')}
+        onMouseOver={() => handleMouseOver("Stuck but shy? :'0 ")}
+        onMouseOut={() => handleMouseOut()}>
+          Exercise (solutions)
+        </button>
+
+        <p id="desc-text"> {desc} </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
