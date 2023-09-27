@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import ExamplePage from "./pages/ExamplePage/ExamplePage"
 import LandingPage from "./pages/LandingPage/LandingPage"
-import { ExercisePage } from "./pages/ExercisePage.tsx/ExercisePage"
+import { ExercisePage } from "./pages/ExercisePage/ExercisePage"
 import SolutionPage from "./pages/SolutionPage/SolutionPage"
 
 export default function App() {
