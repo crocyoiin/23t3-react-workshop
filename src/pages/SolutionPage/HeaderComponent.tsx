@@ -25,8 +25,23 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
         placeholder="Add a new task"
         value={todoText}
         onChange={handleInputChange}
+        style={{
+          padding: '8px',
+          fontSize: '16px',
+          border: '1px solid #ccc',
+          borderRadius: '10px',
+          marginRight: '8px',
+          width: '60%',
+          backgroundColor: '#D5DBDA',
+        }}
       />
-      <button onClick={handleAddTodo}>+</button>
+      <button onClick={handleAddTodo}
+      style={{
+        backgroundColor: '#A0DACC',
+        color: '#76B0A2',
+      }}>
+        +
+      </button>
     </div>
   );
 };

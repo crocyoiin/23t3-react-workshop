@@ -1,9 +1,21 @@
 .addtask {
-    background-color: aquamarine;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .listtask {
-    background-color: aquamarine;
-    
-
+    background-color: white;
+    border-radius: 10px;
 }
+
+/* tasks are curr an unordered list, remove the bullet*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: left;
+}
+

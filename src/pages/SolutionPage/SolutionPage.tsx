@@ -10,15 +10,48 @@ const ExamplePage: React.FC = () => {
     setTodos([...todos, text]);
   };
 
+  const todoItems = [
+    'Finish trainee project',
+    'Watch 3311 lecture',
+    'Take cat to vet',
+  ];
+  
+
   return (
     <div className="sol-wrapper">
-      <h1 className="todoheader">To-Do List</h1>
-      <div className="addtask">
+      <style>
+        {`
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, aquamarine, skyblue);
+          }
+        `}
+      </style>
+      <h1 className="todoheader"
+        style={{
+          color: 'white',
+          fontSize: '40px',
+        }}
+      >
+        To-Do List
+      </h1>
+      <div className="addtask"
+        style={{
+          padding: '10px',
+        }}
+      >
         <TodoInput onAddTodo={handleAddTodo} />
       </div>
-      <h2 className="tasksheader">Tasks:</h2>
-      <div className="listtask">       
-        <TodoList todos={todos} />
+      
+      <div className="listtask"
+        style={{
+          padding: '10px',
+          marginTop: '30px',
+        }}
+      >       
+        <TodoList todos={todoItems} />
       </div>
     </div>
   );
