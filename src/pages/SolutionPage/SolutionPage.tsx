@@ -2,30 +2,24 @@ import React, { useState } from 'react';
 import TodoInput from "./HeaderComponent";
 import TodoList from "./BodyComponent";
 import './SolutionPage.css';
+import { taskData } from './Data';
 
 const ExamplePage: React.FC = () => {
-  const [todos, setTodos] = useState<string[]>([]);
+  const [todos, setTodos] = useState<string[]>(taskData); 
 
   const handleAddTodo = (text: string) => {
     setTodos([...todos, text]);
   };
-
-  const todoItems = [
-    'Finish trainee project',
-    'Watch 3311 lecture',
-    'Take cat to vet',
-  ];
-  
 
   return (
     <div className="sol-wrapper">
       <style>
         {`
           html, body {
-            height: 100%;
             margin: 0;
             padding: 0;
             background: linear-gradient(180deg, aquamarine, skyblue);
+            backgroundRepeat: no-repeat;
           }
         `}
       </style>
@@ -51,7 +45,7 @@ const ExamplePage: React.FC = () => {
           marginTop: '30px',
         }}
       >       
-        <TodoList todos={todoItems} />
+        <TodoList todos={todos} />
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
     margin: 'auto',
     marginBottom: '10px',
     marginTop: '10px',
-    backgroundColor: completed ? '#E9EEEE' : '#D5DBDA', // Customize the background color
+    backgroundColor: completed ? '#E9EEEE' : '#D5DBDA',
     textDecoration: completed ? 'line-through' : 'none',
   };
   
