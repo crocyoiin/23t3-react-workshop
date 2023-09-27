@@ -26,7 +26,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
         value={todoText}
         onChange={handleInputChange}
       />
-      <button onClick={handleAddTodo}>Add</button>
+      <button onClick={handleAddTodo}>+</button>
     </div>
   );
 };
