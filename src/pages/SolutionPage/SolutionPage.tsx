@@ -12,7 +12,7 @@ const ExamplePage: React.FC = () => {
   };
 
   return (
-    <div className="sol-wrapper">
+    <div>
       <style>
         {`
           html, body {
@@ -23,7 +23,7 @@ const ExamplePage: React.FC = () => {
           }
         `}
       </style>
-      <h1 className="todoheader"
+      <h1
         style={{
           color: 'white',
           fontSize: '40px',
@@ -31,20 +31,11 @@ const ExamplePage: React.FC = () => {
       >
         To-Do List
       </h1>
-      <div className="addtask"
-        style={{
-          padding: '10px',
-        }}
-      >
+      <div className="addtask">
         <TodoInput onAddTodo={handleAddTodo} />
       </div>
       
-      <div className="listtask"
-        style={{
-          padding: '10px',
-          marginTop: '30px',
-        }}
-      >       
+      <div className="listtask">       
         <TodoList todos={todos} />
       </div>
     </div>

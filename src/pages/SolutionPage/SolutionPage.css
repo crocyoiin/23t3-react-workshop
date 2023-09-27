@@ -1,11 +1,14 @@
 .addtask {
     background-color: white;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .listtask {
     background-color: white;
     border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 /* tasks are curr an unordered list, remove the bullet*/

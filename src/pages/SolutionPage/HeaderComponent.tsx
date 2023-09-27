@@ -4,7 +4,7 @@ interface TodoInputProps {
   onAddTodo: (text: string) => void;
 }
 
-const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
+const TodoInput = ({ onAddTodo }: TodoInputProps) => {
   const [todoText, setTodoText] = useState<string>('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,7 +19,12 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
   };
 
   return (
-    <div>
+    <div 
+      style={{
+        marginLeft: '10px',
+      }}
+    >
+      {/* the input bar */}
       <input
         type="text"
         placeholder="Add a new task"
@@ -30,11 +35,14 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
           fontSize: '16px',
           border: '1px solid #ccc',
           borderRadius: '10px',
+          
           marginRight: '8px',
           width: '60%',
           backgroundColor: '#D5DBDA',
         }}
       />
+      
+      {/* the add button */}
       <button onClick={handleAddTodo}
       style={{
         backgroundColor: '#A0DACC',
