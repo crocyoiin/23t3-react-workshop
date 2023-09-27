@@ -1,7 +1,7 @@
 #heart-container {
     background: rgba(0, 0, 0, 0.5);
     width:fit-content;
-    height: 70%;
+    height: fit-content;
     padding: 5px;
     padding-bottom: 0;
     padding-top: 5px;
