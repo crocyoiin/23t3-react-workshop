@@ -2,14 +2,15 @@ import TodoItem from './TodoItem';
 
 interface TodoListProps {
   todos: string[];
+  onDeleteTodo: (index: number) => void;
 }
 
-const TodoList = ({ todos }: TodoListProps) => {
+const TodoList = ({ todos, onDeleteTodo }: TodoListProps) => {
   return (
     <ul>
       {todos.map((todo, index) => (
         <li key={index}>
-          <TodoItem text={todo} />
+          <TodoItem text={todo} onDelete={() => onDeleteTodo(index)} />
         </li>
       ))}
     </ul>

@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface TodoItemProps {
   text: string;
+  onDelete: () => void;
 }
 
-const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
+const TodoItem = ({ text, onDelete }: TodoItemProps) => {
   const [completed, setCompleted] = useState(false);
 
   const handleCheckboxChange = () => {
     setCompleted(!completed);
+  };
+
+  const handleDeleteClick = () => {
+    onDelete();
   };
 
   // each item is in its own card
@@ -35,6 +40,17 @@ const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
       <span style={{ textDecoration: completed ? 'line-through' : 'none' }}>
         {text}
       </span>
+      <button onClick={handleDeleteClick}
+        style={{
+          backgroundColor: 'transparent',
+          border: 'none',
+          padding: '0',
+          color: '#3A6D9B',
+          float: 'right',
+          marginTop: '3px',
+          marginBottom: '10px',
+        }}
+      >X</button>
     </div>
   );
 };

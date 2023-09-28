@@ -11,6 +11,12 @@ const ExamplePage: React.FC = () => {
     setTodos([...todos, text]);
   };
 
+  const handleDeleteTodo = (index: number) => {
+    const updatedTodos = [...todos];
+    updatedTodos.splice(index, 1);
+    setTodos(updatedTodos);
+  };
+
   return (
     <div>
       
@@ -42,7 +48,7 @@ const ExamplePage: React.FC = () => {
 
       {/* the list component */}
       <div className="listtask">       
-        <TodoList todos={todos} />
+        <TodoList todos={todos} onDeleteTodo={handleDeleteTodo} />
       </div>
 
     </div>
