@@ -16,10 +16,11 @@ const TodoItem: React.FC<TodoItemProps> = ({ text }) => {
     border: '1px solid #ccc',
     borderRadius: '10px',
     padding: '10px',
-    width: '80%',
+    width: '90%',
     margin: 'auto',
     marginBottom: '10px',
     marginTop: '10px',
+    color: completed ? '#B6C7C3' : '#879793',
     backgroundColor: completed ? '#E9EEEE' : '#D5DBDA',
     textDecoration: completed ? 'line-through' : 'none',
   };

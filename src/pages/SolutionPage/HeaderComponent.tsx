@@ -36,9 +36,9 @@ const TodoInput = ({ onAddTodo }: TodoInputProps) => {
           fontSize: '16px',
           border: '1px solid #ccc',
           borderRadius: '10px',
-          
+          color: '#879793',
           marginRight: '8px',
-          width: '60%',
+          width: '90%',
           backgroundColor: '#D5DBDA',
         }}
       />
