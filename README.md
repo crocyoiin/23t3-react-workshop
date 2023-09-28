@@ -60,6 +60,7 @@ You might have to make new tsx files for your components/props.
 # 4. Extras
 
 Finished early? Here are some bonus features that you can try to implement!
+- Deleting todo cards
 - Deadlines for todo cards
 - Filtering to display only uncompleted / completed
 - Dragging to rearrange cards
