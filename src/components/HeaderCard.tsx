@@ -1,4 +1,5 @@
-import pic from '../../assets/link.gif';
+import pic from '../assets/link.gif';
+import '../pages/ExamplePage/ExamplePage.css';
 
 const HeaderCard = () => {
 	return(

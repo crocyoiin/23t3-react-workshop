@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './ExamplePage.css'
 import ExampleComponent from '../../components/ExampleComponent/ExampleComponent';
 import UseStateDemo from '../../components/UseStateDemo';
-import HeaderCard from '../../components/HeaderCard/HeaderCard';
+import HeaderCard from '../../components/HeaderCard';
 
 const ExamplePage = () => {
   const navigate = useNavigate();

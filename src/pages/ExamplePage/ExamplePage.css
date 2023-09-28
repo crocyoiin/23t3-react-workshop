@@ -21,6 +21,10 @@
   padding: 1em;
 }
 
+#header-card {
+  margin: 2em;
+}
+
 #left-grid {
   grid-column-start: 1;
   grid-column-end: 2;
