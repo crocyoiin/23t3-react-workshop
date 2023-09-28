@@ -51,10 +51,11 @@ You might have to make new tsx files for your components/props.
 # 3. Exercise Tasks
 | Feature                 | Files                     | Description                                                                                                                                                                                                                                        |
 |-------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.1 Creating item cards | TodoItem.tsx TodoItem.css | Harcode some sample data for your todo tasks for now. For each item in the array, create a new item card that displays the text (ie. your tasks).  Hint: We’re passing in a string to display, how can we pass in an argument to a component? |
+| 3.1 Creating item cards | TodoItem.tsx TodoItem.css* Data.tsx | Harcode some sample data for your todo tasks for now. For each item in the array, create a new item card that displays the text (ie. your tasks).  Hint: We’re passing in a string to display, how can we pass in an argument to a component? |
 | 3.2 Input box           | HeaderComponent.tsx       | Have a look at how we’re currently storing the hardcoded  Hint: useState may come in useful! Remember that you can push and filter arrays :)                                                                                                       |
-| 3.3 Crossing out items  | TodoItem.tsx TodoItem.css | We want to be able to render our crossed out components and regular item cards differently. You might have to create a new type for your todo items, which stores the todo string and status.                                                      |
+| 3.3 Crossing out items  | TodoItem.tsx TodoItem.css* | We want to be able to render our crossed out components and regular item cards differently. You might have to create a new type for your todo items, which stores the todo string and status.                                                      |
 
+*You might find it easier to do inline css rather than creating a separate css file. The solutions mostly use inline css :)
 
 # 4. Extras
 
