@@ -2,24 +2,49 @@ import React, { useState } from 'react';
 import TodoInput from "./HeaderComponent";
 import TodoList from "./BodyComponent";
 import './SolutionPage.css';
+import { taskData } from './Data';
 
 const ExamplePage: React.FC = () => {
-  const [todos, setTodos] = useState<string[]>([]);
+  const [todos, setTodos] = useState<string[]>(taskData); 
 
   const handleAddTodo = (text: string) => {
     setTodos([...todos, text]);
   };
 
   return (
-    <div className="sol-wrapper">
-      <h1 className="todoheader">To-Do List</h1>
+    <div>
+      
+      <style>
+        {`
+          html, body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, aquamarine, skyblue);
+            backgroundRepeat: no-repeat;
+          }
+        `}
+      </style>
+
+      {/* title */}
+      <h1
+        style={{
+          color: 'white',
+          fontSize: '40px',
+        }}
+      >
+        To-Do List
+      </h1>
+
+      {/* the header component */}
       <div className="addtask">
         <TodoInput onAddTodo={handleAddTodo} />
       </div>
-      <h2 className="tasksheader">Tasks:</h2>
+
+      {/* the list component */}
       <div className="listtask">       
         <TodoList todos={todos} />
       </div>
+
     </div>
   );
 };
