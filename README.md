@@ -43,6 +43,7 @@ Every project will be set up slightly differently (especially since we wanted to
 
 
 # 2. Exercise Lore
+Task Figma: https://www.figma.com/file/cJrZGshDIj9y4Jy8fdYTB8/react-workshop?type=design&node-id=0-1&mode=design&t=Fwrm3NzftVpbp2B7-0
 
 Your task is to implement this todo list! We’ve given you a blank page in `src/pages/ExercisePage` to get you started and some css files if you don’t want to pull your teeth out styling, but feel free to modify any of the code to your liking! If at any point you’re stuck but too shy to ask for help, you can find some provided solutions in `src/pages/SolutionPage`.
 
